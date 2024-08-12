@@ -7,5 +7,7 @@ public class Find {
         System.out.println(myPet.dogName);
         Dog myPet2 = new Dog (5, "Dollar",false);
         System.out.println(myPet2.dogName);
+        myPet.speak();
+        myPet2.speak();
     }
 }
