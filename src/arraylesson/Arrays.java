@@ -11,10 +11,10 @@ public class Arrays {
         prices[1] = 45;
         prices[2]= 34;
         prices[3]= 456;
-         names [1] ="Aman Kumar";
-         names[2] ="Swaraj kumar";
-         names[3] ="Sameer kumar";
-         tax[1] = 34.5 ;
+        names [1] ="Aman Kumar";
+        names[2] ="Swaraj kumar";
+        names[3] ="Sameer kumar";
+        tax[1] = 34.5 ;
         tax[2] = 56.6;
         tax[3] = 23.4 ;
         System.out.println(prices[2]);
