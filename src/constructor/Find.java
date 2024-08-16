@@ -9,5 +9,7 @@ public class Find {
         System.out.println(myPet2.dogName);
         myPet.speak();
         myPet2.speak();
+        myPet.setDogAge();
+        myPet2.setDogAge();
     }
 }

@@ -1,38 +1,22 @@
 package polymorphism;
-public class Fruits {           //This is a parent class and below it we will create child class for now
-    public void menu() { //This is a method we will use for polymorphism
-        System.out.println("Aman Fruit Juice Shop Menu");
-    }
+public class Fruits{                          //PARENT CLASS
+    String nameProduct;
+    int halfPrice;
+    int fullPrice;
+    boolean isPreservable;
+    public Fruits(String nameProduct,int halfPrice,int fullPrice,boolean isPreservable){
+        this.nameProduct = nameProduct;
+        this.halfPrice = halfPrice;
+        this.fullPrice = fullPrice;
+        this.isPreservable = isPreservable;
 
-    // Now We create child class  named Apple
-    public static class Apple extends Fruits {
-        @Override
-        public void menu() { //Here we are using override to use the same method of parent class in our child class
-            System.out.println("Apple juice onr Full glass 60");
-            System.out.println("Apple juice half glass Rs 30");
-        }
+     }
+     public void menu(){
+         System.out.println("Welcome to Aman da Juice Shop");
+         System.out.println("We have" + nameProduct);
+         System.out.println("Price of full glass is"+ fullPrice);
+         System.out.println("Price of half glass is "+ halfPrice);
+         System.out.println("it is preservable:" + isPreservable);
+     }
 
-    }
-
-
-    // Now we will make two more child class
-    public static class Orange extends Fruits {
-        @Override
-        public void menu() { //Here we are using override to use the same method of parent class in our child class
-            System.out.println("Orange juice one Full glass 50");
-            System.out.println("Orange juice half glass Rs 30");
-        }
-
-    }
-
-    public static class Banana extends Fruits {
-        @Override
-        public void menu() { //Here we are using override to use the same method of parent class in our child class
-            System.out.println("Banana Shake onr Full glass 80");
-            System.out.println("Banana Shake half glass Rs 40");
-        }
-    }
 }
-
-
-

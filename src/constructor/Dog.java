@@ -18,4 +18,7 @@ public class Dog {
     public void speak (){
         System.out.println("Hello my pet name is "+ dogName);
     }
+    public void setDogAge(){
+        System.out.println("Age of my pet "+dogName+ " is " + dogAge +" And yeah..! its " + isAgressive + " that she is a aggressive dog."  );
+    }
 }
