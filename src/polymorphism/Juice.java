@@ -1,9 +1,7 @@
 package polymorphism;
 
 import polymorphism.Fruits;
-import polymorphism.Apple;
-import polymorphism.Orange;
-import polymorphism.Banana;
+
 
 public class Juice{
     public static void main(String[] args) {
