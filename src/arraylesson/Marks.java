@@ -25,7 +25,7 @@ public class Marks {
         names.add("Mukesh kumar");
         names.add("Sahil sharma");
         names.add("Priyansh");
-        names.add (5,"Mrinal kumar");
+        names.add(5, "Mrinal kumar");
 //        names.set(3,"Yamini Suman"); // set the new element on the chosen index
 //        names.remove(2); //.add can als be used to create element on a particular index
 //        names.remove("Aman kumar");
@@ -50,11 +50,17 @@ public class Marks {
 
 
         //ARRAY BREATHING THIRD FORM
-        Scanner index = new Scanner(System.in);
-        System.out.println("Enter the index and i will show the element");
-        int i = index.nextInt();
-        System.out.println("The name on index " + i + " is " + names.get(i));
-    }
-}
+//        Scanner index = new Scanner(System.in);
+//        System.out.println("Enter the index and i will show the element");
+//        int i = index.nextInt();
+//        System.out.println("The name on index " + i + " is " + names.get(i));
+        for (int i = 0; i < names.size(); i++) {
+            if (i % 2 != 0) {
+                System.out.println("The name on number " + (i + 1) + " is " + names.get(i) + " Qualified. " );
+            } else {
+                System.out.println("The name on number " + (i + 1) + " is " + names.get(i) + "  do not qualify.");
+            }
+        }
+    }}
 
 

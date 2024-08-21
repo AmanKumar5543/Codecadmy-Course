@@ -1,5 +1,5 @@
 package polymorphism;
-public class Fruits{                          //PARENT CLASS
+public class        Fruits{                          //PARENT CLASS
     String nameProduct;
     int halfPrice;
     int fullPrice;
