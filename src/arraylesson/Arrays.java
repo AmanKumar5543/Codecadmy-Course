@@ -1,60 +1,40 @@
 package arraylesson;
 
+import java.util.InputMismatchException;
+import java.util.Scanner;
 
 public class Arrays {
     //Array is a collection of similar type of Datatypes
     public static void main(String[] args) {
 //        Array breathing First form
-        int[] prices = new int[5];
-        String [] names = new String[6];
-        double[] tax = new double[8];
-        prices[1] = 45;
-        prices[2]= 34;
-        prices[3]= 456;
-        names [1] ="Aman Kumar";
-        names[2] ="Swaraj kumar";
-        names[3] ="Sameer kumar";
-        tax[1] = 34.5 ;
-        tax[2] = 56.6;
-        tax[3] = 23.4 ;
-        System.out.println(prices[2]);
-        System.out.println(names[3]);
-        System.out.println(tax[1]);
-
-        // first form ends
-
-        //Array breathing Second form
-
-        int [] cost;
-        cost =new int [5];
-        cost [1] = 45;
-        cost [2]= 55;
-        cost[3]= 65;
-        cost[4] =75;
-        System.out.println(cost[3]);
-        //Second form ends
-
-        //Array breathing third form
-
-        String[] brothers = {"Aman kumar","Mrinal kumar","Swaraj kumar","Sameer kumar","Sahil kumar"};
-//        System.out.println(brothers[1]);
-//        System.out.println(brothers[2]);
-//        System.out.println(brothers[3]);
-//        System.out.println(brothers[0]);
-//        System.out.println(brothers[4]);
-
-        //Third form ends
-        for (int i=0 ; i < brothers.length ; i++){   //used for loop with array to print the values
-            System.out.println(brothers[i]);
+      int rollNo[] = new int[10];
+        String studentName[] = new String[10];
+        boolean isPresent[] = new boolean[10];
+try{
+        Scanner info = new Scanner(System.in);
+        System.out.println("Enter the roll  number of each student ");
+        for (int i = 0; i < rollNo.length; i++) {
+            rollNo[i] = info.nextInt();
         }
-      int i=0;
-        while (i < brothers.length){
-            System.out.println(brothers[i]);   //used while loop with array to print the values
-            i++;
+        System.out.println("Enter the names of the Students");
+        for (int i = 0; i < studentName.length; i++) {
+            studentName[i] = info.nextLine();
         }
-        for (String name : brothers){    // used for each loop for printing the value of array
-            System.out.println(name);
+        System.out.println("Enter true if the student is present");
+        for (int i = 0; i < isPresent.length; i++) {
+            isPresent[i+1] = info.nextBoolean();
+        }
+
+        System.out.println("Information of the Students");
+        for (int i = 0; i < isPresent.length; i++) {
+
+            System.out.println("Roll no. :"+ rollNo[i]);
+            System.out.println("Name :" + studentName[i]);
+            System.out.println("is Present :" + isPresent[i]);
+        }
+     }
+     catch  (InputMismatchException e){
+            System.err.println("Input the value carefully");
         }
     }
-
 }

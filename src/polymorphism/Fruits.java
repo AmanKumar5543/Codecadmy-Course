@@ -19,4 +19,10 @@ public class        Fruits{                          //PARENT CLASS
          System.out.println("it is preservable:" + isPreservable);
      }
 
-}
+    public static void main(String[] args) {
+
+        System.out.println("HEllo This is Parent class");
+        }
+    }
+
+
