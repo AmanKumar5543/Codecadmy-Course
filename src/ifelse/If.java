@@ -12,9 +12,7 @@ public class If {
         if (isIterable){
             System.out.println("Process is iterable");
         }
-        if (name != "Aman Kumar"){
-            System.out.println("The person is a genius");
-        }
+
 
     }
 }
