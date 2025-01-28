@@ -31,7 +31,7 @@ public class IfElse {
         System.out.println(exampleB.x);
         System.out.println(exampleB.x);
 
-      
+
         System.out.println(exampleB.x);
     }
 
