@@ -10,6 +10,7 @@ public class Arrays {
       int rollNo[] = new int[10];
         String studentName[] = new String[10];
         boolean isPresent[] = new boolean[10];
+        int AdmissionFee[] = new int[10];
 try{
         Scanner info = new Scanner(System.in);
         System.out.println("Enter the roll  number of each student ");
@@ -23,6 +24,10 @@ try{
         System.out.println("Enter true if the student is present");
         for (int i = 0; i < isPresent.length; i++) {
             isPresent[i+1] = info.nextBoolean();
+        }
+        System.out.println("Enter the Admission fee of the students");
+        for (int i = 0 ; i > AdmissionFee.length ; i++){
+            AdmissionFee[i] = info.nextInt();
         }
 
         System.out.println("Information of the Students");
