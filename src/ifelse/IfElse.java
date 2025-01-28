@@ -31,11 +31,7 @@ public class IfElse {
         System.out.println(exampleB.x);
         System.out.println(exampleB.x);
 
-        if (exampleB.isIterable){
-            System.out.println("Good the programme is iterable");
-        }else {
-            System.out.println("Bad the programme is not iterable at all");
-        }
+      
         System.out.println(exampleB.x);
     }
 
