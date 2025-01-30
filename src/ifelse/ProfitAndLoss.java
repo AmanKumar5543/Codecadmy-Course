@@ -11,8 +11,10 @@ public class ProfitAndLoss {
 
         if (SP > CP){
             System.out.println("Profit = " + (SP-CP));
+            System.out.println("Congrats you won");
         }
          System.out.println("Loss = " + (CP - SP));
+        System.out.println("Sorry you lost");
 
     }
 }
