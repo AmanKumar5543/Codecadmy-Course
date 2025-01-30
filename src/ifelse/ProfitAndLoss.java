@@ -12,9 +12,13 @@ public class ProfitAndLoss {
         if (SP > CP){
             System.out.println("Profit = " + (SP-CP));
             System.out.println("Congrats won");
+            System.out.println("Profit percent  = "  +((Sp-CP)/SP)+100):
+
+ 
         }
          System.out.println("Loss = " + (CP - SP));
         System.out.println("Sorry you lost");
+	System.out.println("Loss percent = " +((CP -SP)/SP)*100);
 
     }
 }
