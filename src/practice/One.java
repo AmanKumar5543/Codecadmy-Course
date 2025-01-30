@@ -1,2 +1,7 @@
-writting a code in One.java
-info
+package practice;
+
+public class One {
+    public static void main(String[] args) {
+
+    }
+}
