@@ -8,6 +8,5 @@ public class DoWhile {
             i++;
         }
         while (i<=10);
-
     }
 }
